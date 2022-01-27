@@ -1,0 +1,1728 @@
+{
+	"info": {
+		"_postman_id": "117b3db1-f2da-4962-808f-af60bc8080d8",
+		"name": "Course Otomation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/students",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/students",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:53:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"studentNumber\": 100001,\n        \"name\": \"Eren\",\n        \"surname\": \"Ali\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100002,\n        \"name\": \"Merve\",\n        \"surname\": \"Yılmaz\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100003,\n        \"name\": \"Egor\",\n        \"surname\": \"Mikhailovic\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100004,\n        \"name\": \"Ebru\",\n        \"surname\": \"Sayar\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100005,\n        \"name\": \"Sıla\",\n        \"surname\": \"Ali\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100006,\n        \"name\": \"Mehmet\",\n        \"surname\": \"Ali\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100007,\n        \"name\": \"Johny\",\n        \"surname\": \"Lesh\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100008,\n        \"name\": \"Vladimir\",\n        \"surname\": \"Fyodor\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100009,\n        \"name\": \"Fyodor\",\n        \"surname\": \"Mikhael\",\n        \"address\": \"hedehödö sokak\"\n    },\n    {\n        \"studentNumber\": 100010,\n        \"name\": \"DENEME\",\n        \"surname\": \"DENEME\",\n        \"address\": \"DENEMEDENEMEDENEME\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/students/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "100001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/students/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:53:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/students/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "100001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:53:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"studentNumber\": 100001,\n    \"name\": \"Eren\",\n    \"surname\": \"Ali\",\n    \"address\": \"hedehödö sokak\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "tr",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Eren\",\n    \"surname\": \"Sayar\",\n    \"profession\": \"Matematik\",\n    \"lessonIdList\": [10,11]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/students",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "tr",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Eren\",\n    \"surname\": \"Sayar\",\n    \"profession\": \"Matematik\",\n    \"lessonIdList\": [10,11]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/students",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:54:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"studentNumber\": 100011,\n    \"name\": \"Eren\",\n    \"surname\": \"Sayar\",\n    \"address\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"studentNumber\": 100001,\n        \"name\": \"Eren\",\n        \"surname\": \"Sayar\",\n        \"address\": \"haaaaaaaaaaaaaaaaaaaaede hödö sokak\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/students",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"studentNumber\": 100001,\n        \"name\": \"Eren\",\n        \"surname\": \"Sayar\",\n        \"address\": \"haaaaaaaaaaaaaaaaaaaaede hödö sokak\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/students",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:56:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"studentNumber\": 100001,\n    \"name\": \"Eren\",\n    \"surname\": \"Sayar\",\n    \"address\": \"haaaaaaaaaaaaaaaaaaaaede hödö sokak\"\n}"
+						},
+						{
+							"name": "204",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"studentNumber\": 10000134234234234,\n        \"name\": \"Eren\",\n        \"surname\": \"Sayar\",\n        \"address\": \"haaaaaaaaaaaaaaaaaaaaede hödö sokak\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/students",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:56:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Delete Student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/students/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "100001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/students/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "100001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:56:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Student's Lesson And Teacher Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/students/lessons/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"lessons",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "100001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/students/lessons/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students",
+										"lessons",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "100010"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:52:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/students/lessons/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"students",
+										"lessons",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "100001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:53:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"lessonName\": \"Matematik\",\n        \"classRoom\": \"A-5\",\n        \"lessonStartTime\": \"2022-01-27T08:00:00\",\n        \"teacherName\": \"Harry Potter\"\n    },\n    {\n        \"lessonName\": \"Matematik\",\n        \"classRoom\": \"A-4\",\n        \"lessonStartTime\": \"2022-01-27T08:00:00\",\n        \"teacherName\": \"Aragorn Elessar\"\n    },\n    {\n        \"lessonName\": \"Matematik\",\n        \"classRoom\": \"A-3\",\n        \"lessonStartTime\": \"2022-01-27T08:00:00\",\n        \"teacherName\": \"Harold Smith\"\n    },\n    {\n        \"lessonName\": \"Türkçe\",\n        \"classRoom\": \"A-3\",\n        \"lessonStartTime\": \"2022-01-27T13:00:00\",\n        \"teacherName\": \"Feridun Yılmaz\"\n    },\n    {\n        \"lessonName\": \"Türkçe\",\n        \"classRoom\": \"A-4\",\n        \"lessonStartTime\": \"2022-01-27T13:00:00\",\n        \"teacherName\": \"Sinem Elmalı\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Get Teachers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/teachers",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teachers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:56:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Harold\",\n        \"surname\": \"Smith\",\n        \"title\": \"Matematik\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Aragorn\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Matematik\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Harry\",\n        \"surname\": \"Potter\",\n        \"title\": \"Matematik\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Feridun\",\n        \"surname\": \"Yılmaz\",\n        \"title\": \"Türkçe\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Sinem\",\n        \"surname\": \"Elmalı\",\n        \"title\": \"Türkçe\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Teacher",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/teachers/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teachers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:56:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Harold\",\n    \"surname\": \"Smith\",\n    \"title\": \"Matematik\"\n}"
+						},
+						{
+							"name": "204",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "123123"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:57:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Create Teacher",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "tr",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Yeni Eleman İsim\",\n    \"surname\": \"Yeni Eleman Soyisim\",\n    \"title\": \"Matematik\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/teachers",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teachers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "tr",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"name\": \"Yeni Eleman İsim\",\n    \"surname\": \"Yeni Eleman Soyisim\",\n    \"title\": \"Matematik\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:57:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"name\": \"Yeni Eleman İsim\",\n    \"surname\": \"Yeni Eleman Soyisim\",\n    \"title\": \"Matematik\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Teacher",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 2,\n        \"name\": \"Aragornsss\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Türkçe\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/teachers",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teachers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": 2,\n        \"name\": \"Aragornsss\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Türkçe\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:58:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Aragornsss\",\n    \"surname\": \"Elessar\",\n    \"title\": \"Türkçe\"\n}"
+						},
+						{
+							"name": "204",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": 2213123,\n        \"name\": \"Aragornsss\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Türkçe\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 14:58:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Aragornsss\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Türkçe\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:00:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorType\": \"com.erensayar.CourseOtomation.error.exception.BadRequestException\",\n    \"errorCode\": \"0001\",\n    \"errorMessage\": \"Id giriniz\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Teacher",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/teachers/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teachers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/teachers/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"teachers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:00:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lesson",
+			"item": [
+				{
+					"name": "Get Lessons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/lessons",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lessons"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:00:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"lessonName\": \"Matematik\",\n        \"classRoom\": \"A-3\",\n        \"lessonStartTime\": \"2022-01-27T08:00:00\",\n        \"teacher\": null,\n        \"student\": [\n            {\n                \"studentNumber\": 100001,\n                \"name\": \"Eren\",\n                \"surname\": \"Ali\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100002,\n                \"name\": \"Merve\",\n                \"surname\": \"Yılmaz\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100003,\n                \"name\": \"Egor\",\n                \"surname\": \"Mikhailovic\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100004,\n                \"name\": \"Ebru\",\n                \"surname\": \"Sayar\",\n                \"address\": \"hedehödö sokak\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"lessonName\": \"Matematik\",\n        \"classRoom\": \"A-4\",\n        \"lessonStartTime\": \"2022-01-27T08:00:00\",\n        \"teacher\": {\n            \"id\": 2,\n            \"name\": \"Aragorn\",\n            \"surname\": \"Elessar\",\n            \"title\": \"Matematik\"\n        },\n        \"student\": [\n            {\n                \"studentNumber\": 100001,\n                \"name\": \"Eren\",\n                \"surname\": \"Ali\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100002,\n                \"name\": \"Merve\",\n                \"surname\": \"Yılmaz\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100003,\n                \"name\": \"Egor\",\n                \"surname\": \"Mikhailovic\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100004,\n                \"name\": \"Ebru\",\n                \"surname\": \"Sayar\",\n                \"address\": \"hedehödö sokak\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"lessonName\": \"Matematik\",\n        \"classRoom\": \"A-5\",\n        \"lessonStartTime\": \"2022-01-27T08:00:00\",\n        \"teacher\": {\n            \"id\": 3,\n            \"name\": \"Harry\",\n            \"surname\": \"Potter\",\n            \"title\": \"Matematik\"\n        },\n        \"student\": [\n            {\n                \"studentNumber\": 100001,\n                \"name\": \"Eren\",\n                \"surname\": \"Ali\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100002,\n                \"name\": \"Merve\",\n                \"surname\": \"Yılmaz\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100003,\n                \"name\": \"Egor\",\n                \"surname\": \"Mikhailovic\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100004,\n                \"name\": \"Ebru\",\n                \"surname\": \"Sayar\",\n                \"address\": \"hedehödö sokak\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"lessonName\": \"Türkçe\",\n        \"classRoom\": \"A-3\",\n        \"lessonStartTime\": \"2022-01-27T13:00:00\",\n        \"teacher\": {\n            \"id\": 4,\n            \"name\": \"Feridun\",\n            \"surname\": \"Yılmaz\",\n            \"title\": \"Türkçe\"\n        },\n        \"student\": [\n            {\n                \"studentNumber\": 100001,\n                \"name\": \"Eren\",\n                \"surname\": \"Ali\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100002,\n                \"name\": \"Merve\",\n                \"surname\": \"Yılmaz\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100003,\n                \"name\": \"Egor\",\n                \"surname\": \"Mikhailovic\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100004,\n                \"name\": \"Ebru\",\n                \"surname\": \"Sayar\",\n                \"address\": \"hedehödö sokak\"\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"lessonName\": \"Türkçe\",\n        \"classRoom\": \"A-4\",\n        \"lessonStartTime\": \"2022-01-27T13:00:00\",\n        \"teacher\": {\n            \"id\": 5,\n            \"name\": \"Sinem\",\n            \"surname\": \"Elmalı\",\n            \"title\": \"Türkçe\"\n        },\n        \"student\": [\n            {\n                \"studentNumber\": 100001,\n                \"name\": \"Eren\",\n                \"surname\": \"Ali\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100002,\n                \"name\": \"Merve\",\n                \"surname\": \"Yılmaz\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100003,\n                \"name\": \"Egor\",\n                \"surname\": \"Mikhailovic\",\n                \"address\": \"hedehödö sokak\"\n            },\n            {\n                \"studentNumber\": 100004,\n                \"name\": \"Ebru\",\n                \"surname\": \"Sayar\",\n                \"address\": \"hedehödö sokak\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Lesson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/lessons/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lessons",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:00:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-27T08:00:00\",\n    \"teacher\": null,\n    \"student\": [\n        {\n            \"studentNumber\": 100001,\n            \"name\": \"Eren\",\n            \"surname\": \"Ali\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100002,\n            \"name\": \"Merve\",\n            \"surname\": \"Yılmaz\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100003,\n            \"name\": \"Egor\",\n            \"surname\": \"Mikhailovic\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100004,\n            \"name\": \"Ebru\",\n            \"surname\": \"Sayar\",\n            \"address\": \"hedehödö sokak\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "204",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1213"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:01:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Create Lesson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "tr",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-28T08:00:00\",\n    \"teacherId\": 2,\n    \"studentIdList\": [100001,100002,100003]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/lessons",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lessons"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "tr",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-28T08:00:00\",\n    \"teacherId\": 2,\n    \"studentIdList\": [100001,100002,100003]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:15:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-28T08:00:00\",\n    \"teacher\": {\n        \"id\": 2,\n        \"name\": \"Aragorn\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Matematik\"\n    },\n    \"student\": [\n        {\n            \"studentNumber\": 100001,\n            \"name\": \"Eren\",\n            \"surname\": \"Ali\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100002,\n            \"name\": \"Merve\",\n            \"surname\": \"Yılmaz\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100003,\n            \"name\": \"Egor\",\n            \"surname\": \"Mikhailovic\",\n            \"address\": \"hedehödö sokak\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "tr",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-27T08:00:00\",\n    \"teacher\": 2,\n    \"student\": [100001,100002,100003]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:02:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorType\": \"com.erensayar.CourseOtomation.error.exception.BadRequestException\",\n    \"errorCode\": \"0001\",\n    \"errorMessage\": \"Sınıfta bu saatte farklı bir ders işleniyor!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Lesson",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-28T08:00:00\",\n    \"teacherId\": 2,\n    \"studentIdList\": [100001,100002,100003,100005]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/lessons",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lessons"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-28T08:00:00\",\n    \"teacherId\": 2,\n    \"studentIdList\": [100001,100002,100003,100005]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:18:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"lessonName\": \"Matematik\",\n    \"classRoom\": \"A-3\",\n    \"lessonStartTime\": \"2022-01-28T08:00:00\",\n    \"teacher\": {\n        \"id\": 2,\n        \"name\": \"Aragorn\",\n        \"surname\": \"Elessar\",\n        \"title\": \"Matematik\"\n    },\n    \"student\": [\n        {\n            \"studentNumber\": 100001,\n            \"name\": \"Eren\",\n            \"surname\": \"Ali\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100002,\n            \"name\": \"Merve\",\n            \"surname\": \"Yılmaz\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100003,\n            \"name\": \"Egor\",\n            \"surname\": \"Mikhailovic\",\n            \"address\": \"hedehödö sokak\"\n        },\n        {\n            \"studentNumber\": 100005,\n            \"name\": \"Sıla\",\n            \"surname\": \"Ali\",\n            \"address\": \"hedehödö sokak\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Lesson",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/api/v1/lessons/:id",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lessons",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/v1/lessons/:id",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"lessons",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jan 2022 15:18:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base-url",
+			"value": "127.0.0.1:8000"
+		}
+	]
+}
