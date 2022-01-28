@@ -1,4 +1,4 @@
-package com.erensayar.hrDayOffModuleApplication.error.model;
+package com.erensayar.CourseOtomation.error.model;
 
 import lombok.Builder;
 import lombok.Data;
